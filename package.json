@@ -1,0 +1,29 @@
+{
+  "name": "contentful-es-cluster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elfiyang16/contentful-blog-ES-cluster.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elfiyang16/contentful-blog-ES-cluster/issues"
+  },
+  "homepage": "https://github.com/elfiyang16/contentful-blog-ES-cluster#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.15.0",
+    "aws-elasticsearch-connector": "^9.0.3",
+    "aws-sdk": "^2.1028.0",
+    "contentful": "^9.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "prettier": "^2.4.1"
+  }
+}
