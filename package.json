@@ -18,9 +18,12 @@
   "homepage": "https://github.com/elfiyang16/contentful-blog-ES-cluster#readme",
   "dependencies": {
     "@elastic/elasticsearch": "^7.15.0",
+    "@types/aws-lambda": "^8.10.85",
+    "@types/node": "^16.11.7",
     "aws-elasticsearch-connector": "^9.0.3",
     "aws-sdk": "^2.1028.0",
-    "contentful": "^9.1.4"
+    "contentful": "^9.1.4",
+    "typescript": "^4.4.4"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
