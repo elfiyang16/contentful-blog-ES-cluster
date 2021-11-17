@@ -1,5 +1,3 @@
-import { StreamRecord } from "aws-lambda";
-import AWS from "aws-sdk";
 import { Client } from "@elastic/elasticsearch";
 
 // INSERT || MODIFY

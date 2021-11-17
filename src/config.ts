@@ -19,7 +19,7 @@ AWS.config.update({
 export const createElasticSearchClient = () => {
   const client = new Client({
     ...createAwsElasticsearchConnector(AWS.config),
-    node: process.env.ES_ENDPOINT ?? `http://localhost:9200`,
+    node: process.env.ES_HOST ?? `http://localhost:9200`,
     maxRetries: 5,
     requestTimeout: 30000,
   });
