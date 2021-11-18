@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check-types": "tsc --noEmit",
+    "clean": "rimraf dist/",
+    "build": "npm run clean && tsc && npm run prebuild:dependency && zip -r lambdaFunc.zip . ",
+    "prebuild:dependency": "cp package.json dist/package.json && cp package-lock.json dist/package-lock.json && cd dist/ && npm ci --production"
   },
   "repository": {
     "type": "git",
@@ -27,6 +31,7 @@
   },
   "devDependencies": {
     "eslint": "^8.2.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2"
   }
 }
